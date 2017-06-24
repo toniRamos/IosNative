@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fe8-kf-mWp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dfa-eg-kVX">
+            <objects>
+                <navigationController id="fe8-kf-mWp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i3A-mO-EiW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Oi9-DI-VRO" kind="relationship" relationship="rootViewController" id="laP-Bc-Exf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogD-Gm-2zy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="48"/>
+        </scene>
+        <!--Vista1-->
+        <scene sceneID="8Ad-kL-W02">
+            <objects>
+                <viewController title="Vista1" id="Oi9-DI-VRO" customClass="VistaUnoViewController" customModule="NavigationControllerCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Ma-gf-Wlp"/>
+                        <viewControllerLayoutGuide type="bottom" id="D0t-Ap-l8x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dnv-0r-6Sh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhf-xu-3bb">
+                                <rect key="frame" x="141" y="318" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ver Vista Dos"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBh-e0-aLu">
+                                <rect key="frame" x="141" y="318" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ver Vista Dos"/>
+                                <connections>
+                                    <action selector="verVista2:" destination="Oi9-DI-VRO" eventType="touchUpInside" id="4z4-Ax-xYN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JKv-s4-hSy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8H-I9-gnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="505" y="47"/>
+        </scene>
+        <!--Vista2-->
+        <scene sceneID="cVt-xs-Y3w">
+            <objects>
+                <viewController storyboardIdentifier="vista2" title="Vista2" id="g8E-jc-I8n" customClass="VistaDosViewController" customModule="NavigationControllerCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OJi-Hl-Chi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ANd-H4-dO9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PVs-TO-qWS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MvA-SZ-bhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223" y="46"/>
+        </scene>
+    </scenes>
+</document>
